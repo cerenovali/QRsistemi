@@ -43,15 +43,15 @@ Host (örn: sqlXXX.epizy.com), Database adı, Kullanıcı adı, Şifre.
 
 ## 4. Veritabanı bağlantısını ayarlama
 - Projede bulunan config.php veya db.php dosyasını açın ve şu bilgileri güncelleyin:
-$host = "sqlXXX.epizy.com";
-$user = "epiz_xxxxxx";
-$password = "şifreniz";
-$database = "epiz_xxxxxx_db";
+- $host = "sqlXXX.epizy.com";
+- $user = "epiz_xxxxxx";
+- $password = "şifreniz";
+- $database = "epiz_xxxxxx_db";
 - Not: localhost kullanmayın, InfinityFree’nin verdiği host adresini yazın.
 
 ## 5. Çalıştırma
 - Tarayıcıdan sitenizi açın:
-- http://siteniz.epizy.com
+- http://siteniz.infinityfreeapp.com
 
 ## Klasör Yapısı
 
