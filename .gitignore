@@ -1,0 +1,17 @@
+# Üretilen dosyalar
+/assets/generated/*.png
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Ortam
+.env
+config.local.php
+
+# Log
+*.log
