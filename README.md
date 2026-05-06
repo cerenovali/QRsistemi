@@ -23,28 +23,35 @@
 - ✅ Admin paneli
 
 ---
+## Kurulum
+### 1. Projeyi yükleme
+- Bu repoyu ZIP olarak indirin.
+- Dosyaları çıkarın.
+- InfinityFree paneline girin.
+- Tüm dosyaları htdocs klasörüne yükleyin.
 
-## Kurulum (XAMPP)
+### 2. Veritabanı oluşturma
+- Control Panel → MySQL Databases.
+- Yeni bir veritabanı oluşturun.
+- Size verilen bilgileri not edin:
+Host (örn: sqlXXX.epizy.com), Database adı, Kullanıcı adı, Şifre.
 
-### 1. Gereksinimler
-- XAMPP (PHP 8.x + MySQL + Apache)
+### 3. Veritabanını ekleme
+- phpMyAdmin’e girin.
+- Oluşturduğunuz veritabanını seçin.
+- Projedeki .sql dosyasını Import edin.
 
-### 2. Dosyaları Yerleştir
-```
-C:\xampp\htdocs\QRBarkodSistemi\
-```
+## 4. Veritabanı bağlantısını ayarlama
+- Projede bulunan config.php veya db.php dosyasını açın ve şu bilgileri güncelleyin:
+$host = "sqlXXX.epizy.com";
+$user = "epiz_xxxxxx";
+$password = "şifreniz";
+$database = "epiz_xxxxxx_db";
+- Not: localhost kullanmayın, InfinityFree’nin verdiği host adresini yazın.
 
-### 3. Veritabanını Kur
-1. XAMPP Control Panel → Apache ve MySQL'i başlat
-2. Tarayıcıda: `http://localhost/phpmyadmin`
-3. Sol üstte **"Yeni"** → Veritabanı adı: `qrbarkod_db` → Oluştur
-4. Oluşturulan veritabanını seç → **İçe Aktar (Import)** sekmesi
-5. `data/veritabani.sql` dosyasını seç → **Git**
-
-### 4. Uygulamayı Aç
-```
-http://localhost/QRBarkodSistemi/
-```
+## 5. Çalıştırma
+- Tarayıcıdan sitenizi açın:
+- http://siteniz.epizy.com
 
 ## Klasör Yapısı
 
