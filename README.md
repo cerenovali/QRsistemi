@@ -1,4 +1,4 @@
-# QR Barkod Sistemi
+# QR Sistemi
 
 **BGT 132 — Yazılım Geliştirme Teknolojileri | Final Projesi**
 
@@ -46,22 +46,10 @@ C:\xampp\htdocs\QRBarkodSistemi\
 http://localhost/QRBarkodSistemi/
 ```
 
----
-
-## Test Hesapları
-
-| Rol     | Kullanıcı Adı | Şifre    |
-|---------|--------------|----------|
-| Admin   | `admin`      | password |
-| Üye     | `ali`        | password |
-| Üye     | `ayse`       | password |
-
----
-
 ## Klasör Yapısı
 
 ```
-QRBarkodSistemi/
+QRSistemi/
 ├── docs/                        # Gereksinim Analizi, UML Diyagramları
 ├── src/
 │   ├── core/
@@ -114,16 +102,3 @@ QRBarkodSistemi/
 | **Polymorphism** | `YorumModel::hepsiniGetir()` → `TemelModel::hepsiniGetir()` override |
 | **Encapsulation** | `KullaniciModel` ve `UrunModel`'de private alanlar + getter/setter |
 | **Abstraction** | `TemelModel` abstract sınıf |
-
----
-
-## Örnek Git Commit Akışı
-```bash
-git init
-git add .
-git commit -m "proje başlangıcı: klasör yapısı ve DB şeması oluşturuldu"
-git commit -m "OOP: TemelModel, KullaniciModel, UrunModel sınıfları eklendi"
-git commit -m "kimlik doğrulama: giriş ve kayıt sayfaları tamamlandı"
-git commit -m "QR okuyucu, ürün detay ve yorum sistemi eklendi"
-git commit -m "sepet, ödeme ve sipariş modülleri tamamlandı"
-```
