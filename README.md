@@ -49,45 +49,58 @@ http://localhost/QRBarkodSistemi/
 ## Klasör Yapısı
 
 ```
-QRSistemi/
-├── docs/                        # Gereksinim Analizi, UML Diyagramları
+QRsistemi/
+├── docs/
+│   ├── Gereksinim_Analizi.pdf
+│   └── UML_Diyagramlari.pdf
 ├── src/
 │   ├── core/
-│   │   ├── Veritabani.php       # Singleton DB bağlantısı
-│   │   ├── TemelModel.php       # Abstract temel model (OOP)
-│   │   └── Oturum.php           # Session yönetimi
+│   │   ├── Veritabani.php
+│   │   ├── TemelModel.php
+│   │   └── Oturum.php
 │   ├── modules/
-│   │   ├── KullaniciModel.php   # Kalıtım: TemelModel → Encapsulation
-│   │   ├── UrunModel.php        # Kalıtım: TemelModel → Encapsulation
-│   │   ├── YorumModel.php       # Kalıtım + Polymorphism (override)
-│   │   ├── SepetModel.php       # Sepet işlemleri
-│   │   └── SiparisModel.php     # Sipariş & ödeme işlemleri
+│   │   ├── admin/
+│   │   │   └── panel.php
+│   │   ├── KullaniciModel.php
+│   │   ├── UrunModel.php
+│   │   ├── YorumModel.php
+│   │   ├── SepetModel.php
+│   │   └── SiparisModel.php
+│   ├── pages/
+│   │   ├── index.php
+│   │   ├── giris.php
+│   │   ├── kayit.php
+│   │   ├── cikis.php
+│   │   ├── urunler.php
+│   │   ├── urun.php
+│   │   ├── qr_olustur.php
+│   │   ├── qr_oku.php
+│   │   ├── sepet.php
+│   │   ├── odeme.php
+│   │   ├── siparis.php
+│   │   ├── siparisler.php
+│   │   └── profil.php
 │   ├── services/
-│   │   └── QRKodServisi.php     # QR token ve URL üretimi
+│   │   ├── api/
+│   │   │   └── qr_uret.php
+│   │   └── QRKodServisi.php
 │   ├── ui/
-│   │   ├── header.php           # Ortak navbar şablonu
-│   │   └── footer.php           # Ortak alt şablon
+│   │   ├── header.php
+│   │   └── footer.php
 │   └── utils/
-│       └── yardimcilar.php      # Yardımcı fonksiyonlar
+│       └── yardimcilar.php
 ├── assets/
 │   ├── images/
-│   └── generated/               # Üretilen QR görselleri
+│   ├── icons/
+│   ├── sounds/
+│   └── js/
+│       ├── bootstrap.bundle.min.js
+│       ├── jsQR.js
+│       └── qrcode.min.js
 ├── data/
-│   └── veritabani.sql           # DB kurulum dosyası
+│   └── veritabani.sql
 ├── tests/
 │   └── test_siniflari.php
-├── index.php                    # Ana sayfa
-├── giris.php                    # Giriş
-├── kayit.php                    # Kayıt
-├── cikis.php                    # Çıkış
-├── urunler.php                  # Ürün listesi
-├── urun.php                     # Ürün detay + QR + Yorum + Sepet
-├── qr_oku.php                   # Kamera QR tarayıcı
-├── sepet.php                    # Sepet
-├── odeme.php                    # Ödeme (kredi kartı + taksit)
-├── siparis.php                  # Sipariş onayı
-├── siparisler.php               # Sipariş geçmişi
-├── profil.php                   # Profil
 ├── README.md
 └── .gitignore
 ```
