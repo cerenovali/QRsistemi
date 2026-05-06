@@ -1,4 +1,4 @@
-# QR Sistemi
+# QR Kod Okuyucu ve Oluşturucu
 
 **BGT 132 — Yazılım Geliştirme Teknolojileri | Final Projesi**
 
