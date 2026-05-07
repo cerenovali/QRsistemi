@@ -46,6 +46,7 @@ Host (örn: sqlXXX.epizy.com), Database adı, Kullanıcı adı, Şifre.
 - $user = "epiz_xxxxxx";
 - $password = "şifreniz";
 - $database = "epiz_xxxxxx_db";
+  
 ⚠️ Not: localhost kullanmayın, InfinityFree’nin verdiği host adresini yazın.
 
 ### 5. Çalıştırma
