@@ -5,7 +5,6 @@
 ---
 
 ## Proje Amacı
-
 Ürünlere QR kod atayan, kamera ile QR taranabilen, kullanıcıların giriş yapıp ürünlere yorum bırakabildiği, sepete ekleyip kredi kartıyla ödeme yapabildiği tam kapsamlı PHP web uygulaması.
 
 ---
@@ -52,8 +51,9 @@ Host (örn: sqlXXX.epizy.com), Database adı, Kullanıcı adı, Şifre.
 ### 5. Çalıştırma
 - Tarayıcıdan sitenizi açın:
 - http://siteniz.infinityfreeapp.com
-  
-# 
+
+---
+
 ## Kurulum (XAMPP)
 ### 1. Dosyaları İndir ve Yerleştir
 - GitHub'dan projeyi ZIP olarak indir veya klonla:
