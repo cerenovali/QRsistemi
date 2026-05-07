@@ -53,7 +53,7 @@ Host (örn: sqlXXX.epizy.com), Database adı, Kullanıcı adı, Şifre.
 - Tarayıcıdan sitenizi açın:
 - http://siteniz.infinityfreeapp.com
   
-```
+
 ## Kurulum (XAMPP)
 ### 1. Dosyaları İndir ve Yerleştir
 - GitHub'dan projeyi ZIP olarak indir veya klonla:
