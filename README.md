@@ -85,6 +85,7 @@ Host (örn: sqlXXX.epizy.com), Database adı, Kullanıcı adı, Şifre.
 - Tarayıcıda şu adrese git:
 - http://localhost/QRsistemi/src/pages/index.php
 
+
 ## Klasör Yapısı
 ```
 QRsistemi/
