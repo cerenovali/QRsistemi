@@ -23,7 +23,7 @@
 - ✅ Admin paneli
 
 ---
-## Kurulum
+## Kurulum (İnfinityFree)
 ### 1. Projeyi yükleme
 - Bu repoyu ZIP olarak indirin.
 - Dosyaları çıkarın.
@@ -41,7 +41,7 @@ Host (örn: sqlXXX.epizy.com), Database adı, Kullanıcı adı, Şifre.
 - Oluşturduğunuz veritabanını seçin.
 - Projedeki .sql dosyasını Import edin.
 
-## 4. Veritabanı bağlantısını ayarlama
+### 4. Veritabanı bağlantısını ayarlama
 - Projede bulunan config.php veya db.php dosyasını açın ve şu bilgileri güncelleyin:
 - $host = "sqlXXX.epizy.com";
 - $user = "epiz_xxxxxx";
@@ -49,12 +49,43 @@ Host (örn: sqlXXX.epizy.com), Database adı, Kullanıcı adı, Şifre.
 - $database = "epiz_xxxxxx_db";
 - Not: localhost kullanmayın, InfinityFree’nin verdiği host adresini yazın.
 
-## 5. Çalıştırma
+### 5. Çalıştırma
 - Tarayıcıdan sitenizi açın:
 - http://siteniz.infinityfreeapp.com
+  
+```
+## Kurulum (XAMPP)
+### 1. Dosyaları İndir ve Yerleştir
+- GitHub'dan projeyi ZIP olarak indir veya klonla:
+- bashgit clone https://github.com/cerenovali/QRsistemi.git
+- Klasörü aşağıdaki konuma taşı:
+- C:\xampp\htdocs\QRsistemi\
+
+### 2. Veritabanı Bağlantısını Güncelle
+- src/core/Veritabani.php dosyasını aç ve şu satırları XAMPP ayarlarına göre düzenle:
+- phpprivate static string $host = 'localhost';
+- private static string $db   = 'qrdb';
+- private static string $user = 'root';
+- private static string $pass = '';   // XAMPP varsayılanı boştur
+⚠️ Orijinal dosyada uzak sunucu (InfinityFree) bilgileri yazılıdır, bunları yukarıdakiyle değiştirmezsen bağlantı kurulamaz.
+
+
+### 3. Veritabanını Oluştur ve İçe Aktar
+- XAMPP Control Panel'i aç → Apache ve MySQL'i başlat
+- Tarayıcıda şu adrese git: http://localhost/phpmyadmin
+- Sol üstte "Yeni" butonuna tıkla
+- Veritabanı adını qrdb yaz → Oluştur
+- Oluşturulan veritabanını seçili hâldeyken üstteki İçe Aktar (Import) sekmesine geç
+- Dosya Seç butonuyla projeden data/veritabani.sql dosyasını seç
+- Sayfanın altındaki Git butonuna tıkla
+📌 SQL dosyasının en üstündeki USE if0_41821231_qrdb; satırı sorun çıkarırsa onu da USE qrdb; olarak değiştir ya da içe aktarmadan önce o satırı sil.
+
+
+### 4. Uygulamayı Çalıştır
+- Tarayıcıda şu adrese git:
+- http://localhost/QRsistemi/src/pages/index.php
 
 ## Klasör Yapısı
-
 ```
 QRsistemi/
 ├── docs/
