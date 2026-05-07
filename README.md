@@ -67,18 +67,19 @@ Host (örn: sqlXXX.epizy.com), Database adı, Kullanıcı adı, Şifre.
 - phpprivate static string $host = 'localhost';
 - private static string $db   = 'qrdb';
 - private static string $user = 'root';
-- private static string $pass = '';   // XAMPP varsayılanı boştur
+- private static string $pass = '';   // XAMPP varsayılanı boştur.
+  
 ⚠️ Orijinal dosyada uzak sunucu (InfinityFree) bilgileri yazılıdır, bunları yukarıdakiyle değiştirmezsen bağlantı kurulamaz.
 
 
 ### 3. Veritabanını Oluştur ve İçe Aktar
-- XAMPP Control Panel'i aç → Apache ve MySQL'i başlat
+- XAMPP Control Panel'i aç → Apache ve MySQL'i başlat.
 - Tarayıcıda şu adrese git: http://localhost/phpmyadmin
-- Sol üstte "Yeni" butonuna tıkla
+- Sol üstte "Yeni" butonuna tıkla.
 - Veritabanı adını qrdb yaz → Oluştur
 - Oluşturulan veritabanını seçili hâldeyken üstteki İçe Aktar (Import) sekmesine geç
-- Dosya Seç butonuyla projeden data/veritabani.sql dosyasını seç
-- Sayfanın altındaki Git butonuna tıkla
+- Dosya Seç butonuyla projeden data/veritabani.sql dosyasını seç.
+- Sayfanın altındaki Git butonuna tıkla.
 📌 SQL dosyasının en üstündeki USE if0_41821231_qrdb; satırı sorun çıkarırsa onu da USE qrdb; olarak değiştir ya da içe aktarmadan önce o satırı sil.
 
 
